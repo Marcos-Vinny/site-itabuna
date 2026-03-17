@@ -192,3 +192,74 @@ body.historia header {
   padding: 10px; /* 👈 diminui espaço interno */
   max-width: 500px; /* 👈 limita largura */
 }
+
+body.pontos {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/40/Rio_Cachoeira_2.jpg"); /* ou link da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.simbolos-box {
+  padding: 20px;
+}
+
+.img-simbolo {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+.simbolos-box ul {
+  margin-left: 20px;
+}
+
+body.simbolos {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://upload.wikimedia.org/wikipedia/commons/4/40/Rio_Cachoeira_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-simbolo {
+  max-width: 100%;  /* nunca passa do tamanho do container */
+  height: auto;     /* mantém proporção */
+  display: block;
+  margin: 20px auto;
+}
+
+/* FUNDO DA ABA CURIOSIDADES */
+body.curiosidades {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://upload.wikimedia.org/wikipedia/commons/4/40/Rio_Cachoeira_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* AJUSTE DA CAIXA */
+body.curiosidades .conteudo {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* CARDS MAIS BONITOS */
+body.curiosidades .card {
+  transition: 0.3s;
+  cursor: default;
+}
+
+/* EFEITO HOVER */
+body.curiosidades .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO DOS CARDS */
+body.curiosidades .card h3 {
+  color: #1b5e20;
+}
+
+/* TEXTO */
+body.curiosidades .card p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
