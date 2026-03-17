@@ -93,14 +93,14 @@ main {
 .historia-box {
   max-width: 800px;
   margin: auto;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   line-height: 1.6;
 }
 
 .historia-box h2 {
-  color: #2e7d32;
+  color: #090b09;
   margin-top: 20px;
 }
 
@@ -112,4 +112,83 @@ main {
   color: white;
   padding: 10px 15px;
   border-radius: 8px;
+}
+
+body.historia {
+  background-image: url("https://www.idam.am.gov.br/wp-content/uploads/2025/03/Idam-producao-de-cacau2-Foto-Divulgacao-Idam.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.historia header {
+  background: #122d14; /* verde mais escuro */
+}
+
+header h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+body.historia header {
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;
+}
+
+.yt-btn img {
+  width: 60px;
+  transition: 0.3s;
+}
+
+.yt-btn img:hover {
+  transform: scale(1.1);
+}
+
+.doc-box {
+  display: flex;
+  align-items: center; /* alinha vertical */
+  gap: 10px; /* espaço entre texto e botão */
+}
+
+.doc-box p {
+  margin: 0;
+}
+
+.yt-btn img {
+  width: 40px;
+}
+
+.pontos-box {
+  padding: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px; /* 👈 diminui espaço interno */
+  max-width: 500px; /* 👈 limita largura */
 }
