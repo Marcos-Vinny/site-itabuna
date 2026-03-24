@@ -420,3 +420,43 @@ body.curiosidades .card p {
 .voltar-fixo:hover {
   background: #2e7d32;
 }
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lado-esquerdo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lado-esquerdo a {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .lado-direito {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .lado-direito img {
+    width: 90%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .imagem-cacau {
+    display: none;
+  }
+
+}
