@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,9 +11,9 @@
 
 <div class="container-curiosidades">
 
-
   <div class="lado-esquerdo">
 
+</a>
     <div class="card">
       <h3>🌧 Cidade das enchentes</h3>
       <p>Itabuna já enfrentou grandes enchentes ao longo da história por causa do Rio Cachoeira, marcando profundamente o desenvolvimento da cidade.</p>
@@ -58,32 +59,40 @@
       <p>A cidade cresceu rapidamente ao longo do século XX, impulsionada pelo comércio e pela produção agrícola.</p>
     </div>
 
-  </div>
+    
+    <div class="botao-voltar-container">
+  <a href="index.html" class="voltar">⬅ Voltar</a>
+</div>
 
+  </div>
 
   <div class="lado-direito">
     
     <div class="quiz-box">
-  <h2>🧠 Quiz sobre Itabuna</h2>
+      <h2>🧠 Quiz sobre Itabuna</h2>
 
-  <div class="barra-progresso">
-  <div id="progresso"></div>
-</div>
+      <div class="barra-progresso">
+        <div id="progresso"></div>
+      </div>
 
-  <p id="contador"></p> 
+      <p id="contador"></p> 
+      <p id="pergunta"></p>
 
-  <p id="pergunta"></p>
+      <button class="opcao" onclick="responder(0)"></button>
+      <button class="opcao" onclick="responder(1)"></button>
+      <button class="opcao" onclick="responder(2)"></button>
 
-  <button class="opcao" onclick="responder(0)"></button>
-  <button class="opcao" onclick="responder(1)"></button>
-  <button class="opcao" onclick="responder(2)"></button>
+      <p id="resultado"></p>
 
-  <p id="resultado"></p>
+      <button onclick="proximaPergunta()">➡ Próxima</button>
+        </div> 
+  </div> 
 
-  <button onclick="proximaPergunta()">➡ Próxima</button>
-</div>
-
+</div> 
 <script src="quiz.js"></script>
 
+
+
+</a>
 </body>
 </html>
