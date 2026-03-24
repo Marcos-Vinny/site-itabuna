@@ -2,54 +2,88 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>História de Itabuna</title>
+  <title>Curiosidades - Itabuna</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="curiosidades"> </body>
 
-<div class="card">
-  <h3>🌧 Cidade das enchentes</h3>
-  <p>Itabuna já enfrentou grandes enchentes ao longo da história por causa do Rio Cachoeira, marcando profundamente o desenvolvimento da cidade.</p>
+<body class="curiosidades">
+
+<div class="container-curiosidades">
+
+
+  <div class="lado-esquerdo">
+
+    <div class="card">
+      <h3>🌧 Cidade das enchentes</h3>
+      <p>Itabuna já enfrentou grandes enchentes ao longo da história por causa do Rio Cachoeira, marcando profundamente o desenvolvimento da cidade.</p>
+    </div>
+
+    <div class="card">
+      <h3>🍫 Crise do cacau</h3>
+      <p>Na década de 1990, uma praga chamada "vassoura-de-bruxa" devastou as plantações de cacau e impactou fortemente a economia local.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚗 Polo comercial</h3>
+      <p>Mesmo não sendo capital, Itabuna atrai pessoas de várias cidades vizinhas para compras, sendo um dos maiores centros comerciais da região.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌉 Cidade estratégica</h3>
+      <p>Itabuna se desenvolveu em um ponto estratégico de ligação entre várias cidades importantes do sul da Bahia.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏥 Referência em saúde</h3>
+      <p>A cidade é considerada um polo regional de saúde, recebendo pacientes de diversas cidades ao redor.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎓 Educação em destaque</h3>
+      <p>Itabuna possui instituições importantes de ensino superior, atraindo estudantes de toda a região.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚽ Paixão pelo futebol</h3>
+      <p>O futebol é muito forte na cidade, com torcedores apaixonados e tradição em competições regionais.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌙 Vida noturna ativa</h3>
+      <p>Itabuna é conhecida por sua vida noturna movimentada, com bares, festas e eventos frequentes.</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Crescimento urbano rápido</h3>
+      <p>A cidade cresceu rapidamente ao longo do século XX, impulsionada pelo comércio e pela produção agrícola.</p>
+    </div>
+
+  </div>
+
+
+  <div class="lado-direito">
+    
+    <div class="quiz-box">
+  <h2>🧠 Quiz sobre Itabuna</h2>
+
+  <div class="barra-progresso">
+  <div id="progresso"></div>
 </div>
 
-<div class="card">
-  <h3>🍫 Crise do cacau</h3>
-  <p>Na década de 1990, uma praga chamada "vassoura-de-bruxa" devastou as plantações de cacau e impactou fortemente a economia local.</p>
+  <p id="contador"></p> 
+
+  <p id="pergunta"></p>
+
+  <button class="opcao" onclick="responder(0)"></button>
+  <button class="opcao" onclick="responder(1)"></button>
+  <button class="opcao" onclick="responder(2)"></button>
+
+  <p id="resultado"></p>
+
+  <button onclick="proximaPergunta()">➡ Próxima</button>
 </div>
 
-<div class="card">
-  <h3>🚗 Polo comercial</h3>
-  <p>Mesmo não sendo capital, Itabuna atrai pessoas de várias cidades vizinhas para compras, sendo um dos maiores centros comerciais da região.</p>
-</div>
+<script src="quiz.js"></script>
 
-<div class="card">
-  <h3>🌉 Cidade estratégica</h3>
-  <p>Itabuna se desenvolveu em um ponto estratégico de ligação entre várias cidades importantes do sul da Bahia.</p>
-</div>
-
-<div class="card">
-  <h3>🏥 Referência em saúde</h3>
-  <p>A cidade é considerada um polo regional de saúde, recebendo pacientes de diversas cidades ao redor.</p>
-</div>
-
-<div class="card">
-  <h3>🎓 Educação em destaque</h3>
-  <p>Itabuna possui instituições importantes de ensino superior, atraindo estudantes de toda a região.</p>
-</div>
-
-<div class="card">
-  <h3>⚽ Paixão pelo futebol</h3>
-  <p>O futebol é muito forte na cidade, com torcedores apaixonados e tradição em competições regionais.</p>
-</div>
-
-<div class="card">
-  <h3>🌙 Vida noturna ativa</h3>
-  <p>Itabuna é conhecida por sua vida noturna movimentada, com bares, festas e eventos frequentes.</p>
-</div>
-
-<div class="card">
-  <h3>📦 Crescimento urbano rápido</h3>
-  <p>A cidade cresceu rapidamente ao longo do século XX, impulsionada pelo comércio e pela produção agrícola.</p>
-</div>
-
-<a href="index.html" class="voltar">⬅ Voltar</a>
+</body>
+</html>
