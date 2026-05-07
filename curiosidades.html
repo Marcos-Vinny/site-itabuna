@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades - Itabuna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-link">Início</a>
+    <a href="historia.html" class="nav-link">História</a>
+    <a href="pontos.html" class="nav-link">Pontos Turísticos</a>
+    <a href="simbolos.html" class="nav-link">Símbolos</a>
+    <a href="curiosidades.html" class="nav-link active">Curiosidades</a>
+  </nav>
+
+  <main>
+    <h2 class="section-title">Fatos & Quiz</h2>
+    
+    <div class="grid" style="margin-bottom: 50px;">
+      <div class="card">
+        <div class="card-content">
+          <h3>🌧️ Cidade das Enchentes</h3>
+          <p>Devido à proximidade com o Rio Cachoeira, a cidade tem uma história de superação com grandes cheias.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>🏥 Polo de Saúde</h3>
+          <p>Itabuna é referência em medicina para todo o Sul e Extremo Sul da Bahia.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>🎓 Educação</h3>
+          <p>Abriga grandes universidades, sendo um polo estudantil vibrante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-box">
+      <h2 style="color:var(--accent); text-align:center">🧠 Desafio Itabunense</h2>
+      <div class="barra-progresso"><div id="progresso"></div></div>
+      <p id="contador" style="text-align:center; font-weight: bold; margin-bottom: 10px;"></p>
+      <p id="pergunta" style="font-size: 1.4rem; margin-bottom: 20px; text-align:center; font-weight: 600;"></p>
+      
+      <div id="opcoes-container">
+        <button class="opcao" onclick="responder(0)"></button>
+        <button class="opcao" onclick="responder(1)"></button>
+        <button class="opcao" onclick="responder(2)"></button>
+      </div>
+      
+      <p id="resultado" style="margin: 15px 0; text-align:center; font-weight: bold; min-height: 24px;"></p>
+      <button class="btn-action" onclick="proximaPergunta()" style="width:100%; background: var(--accent); color: var(--primary);">Próxima Pergunta</button>
+    </div>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>
