@@ -254,20 +254,82 @@ main {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .hero {
+    height: 45vh;
+    padding: 40px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  nav, .menu-navegacao {
+    padding: 5px;
+    gap: 5px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    padding: 10px 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  main {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 15px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
-  .hero {
-    height: 50vh;
+
+  .card img {
+    height: 200px;
   }
-  .hero-content h1 {
-    font-size: 2.5rem;
+
+  .quiz-box {
+    padding: 20px 15px;
+    border-radius: 10px;
   }
-  main {
-    margin: 10px;
-    padding: 20px;
+
+  .opcao {
+    padding: 18px;
+    font-size: 0.95rem;
   }
+
+  .opcao:hover {
+    transform: none;
+  }
+
   .modal-conteudo {
-    max-width: 95%;
+    width: 95%;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
   }
 }
