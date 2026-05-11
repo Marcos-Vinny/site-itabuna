@@ -18,19 +18,48 @@
     <h2 class="section-title">Nossa Identidade</h2>
     <div class="grid">
       <div class="card">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_872930-MLB79378016738_092024-F.webp">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_872930-MLB79378016738_092024-F.webp" onclick="abrirZoom(this) ">
         <div class="card-content">
           <h3>A Bandeira</h3>
-          <p>Representa a nossa história e força.</p>
+          <p>Representa a nossa história e força. Ela é composta por um fundo amarelo-ouro, representando a riqueza histórica do cacau, soberania e esplendor. No centro, três hexágonos pretos (ou pedras) simbolizam a etimologia do nome da cidade (Itabuna = "pedra preta"), referindo-se a formações rochosas do Rio Cachoeira.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://s2-globorural.glbimg.com/ziEo8m0Y1hkE1qvzvqTEhX3oTEo=/0x0:1920x1080/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_afe5c125c3bb42f0b5ae633b58923923/internal_photos/bs/2024/L/Y/FYBpinRpaT3YSEjhF5UQ/cacau.png">
+        <img src="https://s2-globorural.glbimg.com/ziEo8m0Y1hkE1qvzvqTEhX3oTEo=/0x0:1920x1080/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_afe5c125c3bb42f0b5ae633b58923923/internal_photos/bs/2024/L/Y/FYBpinRpaT3YSEjhF5UQ/cacau.png" onclick="abrirZoom(this)">
         <div class="card-content">
           <h3>O Cacau</h3>
-          <p>Símbolo eterno da prosperidade local.</p>
+          <p>Itabuna cresceu e ficou famosa por causa do cacau. Durante muitos anos, a região sul da Bahia foi uma das maiores produtoras de cacau do mundo, e Itabuna virou um importante centro econômico dessa produção.
+
+🌱 As fazendas de cacau geraram muito dinheiro, empregos e ajudaram no desenvolvimento da cidade, trazendo comércio, estradas e crescimento populacional.</p>
         </div>
       </div>
+      
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Rio_Cachoeira_3.jpg" onclick="abrirZoom(this)">
+        <div class="card-content">
+          <h3>O Rio Cachoeira</h3>
+          <p>O rio Cachoeira corta a cidade e foi essencial para o crescimento econômico de Itabuna, proporcionando água para a agricultura e transporte de mercadorias.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Bras%C3%A3o_de_Itabuna_BA_%28Novo%29.png" onclick="abrirZoom(this)">
+        <div class="card-content">
+          <h3>O Brasão</h3>
+          <p>A história dos símbolos municipais de Itabuna começou em 1958. Os primeiros símbolos foram sugeridos pelo professor Plínio de Almeida e pelo artista plástico Walter Moreira, tendo sido aprovados por meio da Resolução nº 46, de 14 de julho de 1958. A primeira bandeira e o brasão homenageavam os sergipanos e a cultura do cacau.
+
+Em 1960, por decisão do prefeito José Almeida Alcântara, foi solicitado ao monsenhor Paulo Lachenmyer, da Ordem dos Beneditinos da Bahia, especialista em heráldica, uma outra bandeira e brasão, para comemorar o cinquentenário de emancipação do município. A Câmara aprovou o projeto por meio da Lei 457, de 4 de maio de 1960, desconsiderando e revogando a primeira bandeira e brasão de Itabuna.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div style="margin-top: 40px; padding: 25px; background: rgba(20, 54, 33, 0.05); border-left: 4px solid var(--primary); border-radius: 8px;">
+      <p style="margin-bottom: 15px; font-weight: 600;">Ouça aqui o hino oficial de Itabuna:</p>
+      <a href="https://www.youtube.com/watch?v=ShuAm-0FFgg" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #cc0000; font-weight: bold; gap: 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="40" alt="YouTube">
+        Ver hino no YouTube
+      </a>
+    </div>
     </div>
 
     <div style="text-align: center; margin-top: 40px;">
@@ -38,5 +67,20 @@
     </div>
 
   </main>
+  <div id="meuModal" class="modal-zoom" onclick="fecharZoom()">
+    <span class="fechar">&times;</span>
+    <img class="modal-conteudo" id="imgAmpliada">
+  </div>
+
+  <script>
+    function abrirZoom(elemento) {
+      document.getElementById("meuModal").style.display = "flex";
+      document.getElementById("imgAmpliada").src = elemento.src;
+    }
+    function fecharZoom() {
+      document.getElementById("meuModal").style.display = "none";
+    }
+  </script>
+
 </body>
 </html>
